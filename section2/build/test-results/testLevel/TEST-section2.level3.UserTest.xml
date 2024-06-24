@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="section2.level3.UserTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-06-23T15:40:34" hostname="RX297RV65C" time="0.011">
+  <properties/>
+  <testcase name="testUserAddressDisplayAddress()" classname="section2.level3.UserTest" time="0.008"/>
+  <testcase name="testUserAddressFields()" classname="section2.level3.UserTest" time="0.0"/>
+  <testcase name="testUserAddressConstructor()" classname="section2.level3.UserTest" time="0.001"/>
+  <testcase name="testUserAddressFileRemoved()" classname="section2.level3.UserTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

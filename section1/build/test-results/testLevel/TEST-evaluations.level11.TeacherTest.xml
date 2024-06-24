@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="evaluations.level11.TeacherTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2024-06-23T15:10:34" hostname="RX297RV65C" time="0.019">
+  <properties/>
+  <testcase name="testPermanentGettersAndSetters()" classname="evaluations.level11.TeacherTest" time="0.013"/>
+  <testcase name="testSalaryPerMonthField()" classname="evaluations.level11.TeacherTest" time="0.0"/>
+  <testcase name="testIdGettersAndSetters()" classname="evaluations.level11.TeacherTest" time="0.0"/>
+  <testcase name="testAllArgsConstructor()" classname="evaluations.level11.TeacherTest" time="0.001"/>
+  <testcase name="testPartialArgsConstructor()" classname="evaluations.level11.TeacherTest" time="0.001"/>
+  <testcase name="testPermanentField()" classname="evaluations.level11.TeacherTest" time="0.001"/>
+  <testcase name="testIdField()" classname="evaluations.level11.TeacherTest" time="0.0"/>
+  <testcase name="testNameGettersAndSetters()" classname="evaluations.level11.TeacherTest" time="0.001"/>
+  <testcase name="testSalaryPerMonthGettersAndSetters()" classname="evaluations.level11.TeacherTest" time="0.0"/>
+  <testcase name="testNameField()" classname="evaluations.level11.TeacherTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
