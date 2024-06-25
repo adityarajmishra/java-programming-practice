@@ -1,0 +1,3 @@
+Exercise: Creating a Parameterized Constructor
+Objective: Create a parameterized constructor.
+Instructions: Define a parameterized constructor in the Book class that accepts a title and an author, and prints them.

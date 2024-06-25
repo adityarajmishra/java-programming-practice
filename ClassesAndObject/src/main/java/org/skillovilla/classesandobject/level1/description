@@ -1,0 +1,11 @@
+Scenario 1: Car Class
+Objective: Learn to uncomment code to create a class and an object.
+
+Instructions:
+
+Uncomment the code to define a class Car and create an object.
+The Car class should have fields model (String) and year (int).
+The class should have a method displayInfo that prints the car's model and year.
+In the main method, create an object of the Car class, set its fields, and call the displayInfo method.
+
+Note: The creation of objects using the main method is just for your understanding. It will not be evaluated. Only the classes will be evaluated.

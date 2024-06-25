@@ -1,0 +1,10 @@
+Scenario 2: Book Class
+Objective: Implement a class with fields and methods.
+
+Instructions:
+
+Implement the Book class with fields title (String) and author (String).
+Add a method displayInfo to print the book details.
+In the main method, create an object of the Book class and call the displayInfo method.
+
+Note: The creation of objects using the main method is just for your understanding. It will not be evaluated. Only the classes will be evaluated.

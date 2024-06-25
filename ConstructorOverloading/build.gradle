@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+group 'org.skillovilla'
+version '1.0-SNAPSHOT'
+repositories {
+    mavenCentral()
+}
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+test {
+    useJUnitPlatform()
+}
+// Test tasks from here onwards
+tasks.register('testLevel', Test) {
+    doFirst {
+        def level = project.findProperty('level')?.toString()
+        if (level) {
+            useJUnitPlatform()
+            include "org/skillovilla/level${level}/**"
+            testLogging {
+                events "passed", "skipped", "failed"
+            }
+        } else {
+            throw new GradleException("Please provide a level number using -Plevel=<number>")
+        }
+    }
+}

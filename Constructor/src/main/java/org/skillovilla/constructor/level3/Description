@@ -1,0 +1,3 @@
+Exercise 2.1: Creating a Default Constructor
+Objective: Create a default constructor.
+Instructions: Define a default constructor in the Animal class that prints "An animal is created."
