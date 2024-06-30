@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="evaluations.level3.HandleCustomExceptionsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-06-30T18:22:57" hostname="RX297RV65C" time="0.009">
+  <properties/>
+  <testcase name="testInsufficientFundsException()" classname="evaluations.level3.HandleCustomExceptionsTest" time="0.009"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

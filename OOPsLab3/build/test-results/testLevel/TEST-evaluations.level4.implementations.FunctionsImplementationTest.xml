@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="evaluations.level4.implementations.FunctionsImplementationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-06-29T07:45:51" hostname="RX297RV65C" time="0.012">
+  <properties/>
+  <testcase name="testDecrementMethod()" classname="evaluations.level4.implementations.FunctionsImplementationTest" time="0.011"/>
+  <testcase name="testCubeMethod()" classname="evaluations.level4.implementations.FunctionsImplementationTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

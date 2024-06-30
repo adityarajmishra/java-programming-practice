@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="evaluations.level11.gameobjects.SpaceShipTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-06-30T18:06:42" hostname="RX297RV65C" time="0.023">
+  <properties/>
+  <testcase name="testConstructorAndGetters()" classname="evaluations.level11.gameobjects.SpaceShipTest" time="0.013"/>
+  <testcase name="testAbstractClassAndInterfaceImplementation()" classname="evaluations.level11.gameobjects.SpaceShipTest" time="0.003"/>
+  <testcase name="testDisplayStatus()" classname="evaluations.level11.gameobjects.SpaceShipTest" time="0.005"/>
+  <testcase name="testMoveMethods()" classname="evaluations.level11.gameobjects.SpaceShipTest" time="0.001"/>
+  <system-out><![CDATA[The fuel Level is: 50 and the position is (0, 0)
+The fuel Level is: 20 and the position is (0, 0)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
