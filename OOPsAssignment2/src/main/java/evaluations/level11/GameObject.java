@@ -1,6 +1,6 @@
 package evaluations.level11;
 
-public class GameObject {
+public  abstract class GameObject {
     private int positionX;
     private int positionY;
 

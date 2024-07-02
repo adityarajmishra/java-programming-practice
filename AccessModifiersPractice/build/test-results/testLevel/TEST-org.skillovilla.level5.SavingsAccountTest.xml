@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.skillovilla.level5.SavingsAccountTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-07-01T16:30:57" hostname="RX297RV65C" time="0.015">
+  <properties/>
+  <testcase name="testApplyInterest()" classname="org.skillovilla.level5.SavingsAccountTest" time="0.013"/>
+  <testcase name="testWithdraw()" classname="org.skillovilla.level5.SavingsAccountTest" time="0.0"/>
+  <testcase name="testDeposit()" classname="org.skillovilla.level5.SavingsAccountTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

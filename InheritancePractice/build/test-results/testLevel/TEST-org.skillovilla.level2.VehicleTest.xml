@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.skillovilla.level2.VehicleTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2024-07-01T14:26:28" hostname="RX297RV65C" time="0.022">
+  <properties/>
+  <testcase name="testBikeNumberOfWheels()" classname="org.skillovilla.level2.VehicleTest" time="0.016"/>
+  <testcase name="testCarBrand()" classname="org.skillovilla.level2.VehicleTest" time="0.0"/>
+  <testcase name="testCarModel()" classname="org.skillovilla.level2.VehicleTest" time="0.001"/>
+  <testcase name="testBikeBrand()" classname="org.skillovilla.level2.VehicleTest" time="0.001"/>
+  <testcase name="testBikeModel()" classname="org.skillovilla.level2.VehicleTest" time="0.001"/>
+  <testcase name="testCarNumberOfWheels()" classname="org.skillovilla.level2.VehicleTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
