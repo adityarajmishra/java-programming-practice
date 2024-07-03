@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.skillovilla.level3.BankAccountTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2024-07-03T14:32:22" hostname="RX297RV65C" time="0.02">
+  <properties/>
+  <testcase name="testWithdrawInsufficientFunds()" classname="org.skillovilla.level3.BankAccountTest" time="0.013"/>
+  <testcase name="testWithdrawUnauthorizedAccess()" classname="org.skillovilla.level3.BankAccountTest" time="0.001"/>
+  <testcase name="testWithdrawValid()" classname="org.skillovilla.level3.BankAccountTest" time="0.002"/>
+  <testcase name="testDepositValid()" classname="org.skillovilla.level3.BankAccountTest" time="0.001"/>
+  <testcase name="testDepositInvalid()" classname="org.skillovilla.level3.BankAccountTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
