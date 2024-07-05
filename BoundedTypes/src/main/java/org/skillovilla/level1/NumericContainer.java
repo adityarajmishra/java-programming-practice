@@ -1,13 +1,13 @@
 package org.skillovilla.level1;
 
-public class NumericContainer {
-    private int number;
+public class NumericContainer <T extends Number>{
+    private T number;
 
-    public int getNumber() {
+    public T getNumber() {
         return number;
     }
 
-    public void setNumber(int number) {
+    public void setNumber(T number) {
         this.number = number;
     }
 }

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.skillovilla.level2.NumberUtilsTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-07-05T03:46:18" hostname="RX297RV65C" time="0.015">
+  <properties/>
+  <testcase name="testPrintNumberFunctionality()" classname="org.skillovilla.level2.NumberUtilsTest" time="0.012"/>
+  <testcase name="testMethodIsGenericWithBound()" classname="org.skillovilla.level2.NumberUtilsTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
