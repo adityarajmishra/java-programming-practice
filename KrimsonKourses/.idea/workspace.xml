@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bbd7fad-ab9e-4b3d-9871-3f9436e7d92c" name="Changes" comment="" />
+    <list default="true" id="0bbd7fad-ab9e-4b3d-9871-3f9436e7d92c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/krimsonkourses/platform/CommandHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/krimsonkourses/platform/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/krimsonkourses/platform/CourseManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/krimsonkourses/platform/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/krimsonkourses/platform/StudentManager.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
