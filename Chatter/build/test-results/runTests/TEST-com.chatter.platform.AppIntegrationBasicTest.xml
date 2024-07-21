@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.chatter.platform.AppIntegrationBasicTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2024-07-21T07:10:42" hostname="RX297RV65C" time="0.027">
+  <properties/>
+  <testcase name="testCreateChatRoomNameAlreadyExists()" classname="com.chatter.platform.AppIntegrationBasicTest" time="0.013"/>
+  <testcase name="testRegisterUserInvalidUsernameWithSemiColon()" classname="com.chatter.platform.AppIntegrationBasicTest" time="0.001"/>
+  <testcase name="testLoginUserSuccess()" classname="com.chatter.platform.AppIntegrationBasicTest" time="0.001"/>
+  <testcase name="testRegisterUserSuccess()" classname="com.chatter.platform.AppIntegrationBasicTest" time="0.001"/>
+  <testcase name="testRegisterUserUsernameAlreadyExists()" classname="com.chatter.platform.AppIntegrationBasicTest" time="0.001"/>
+  <testcase name="testAddUserToChatRoomUsernameNotFound()" classname="com.chatter.platform.AppIntegrationBasicTest" time="0.0"/>
+  <testcase name="testLoginAlreadyLoggedInUser()" classname="com.chatter.platform.AppIntegrationBasicTest" time="0.0"/>
+  <testcase name="testAddUserToChatRoomRoomNameNotFound()" classname="com.chatter.platform.AppIntegrationBasicTest" time="0.001"/>
+  <testcase name="testLoginUnregisteredUser()" classname="com.chatter.platform.AppIntegrationBasicTest" time="0.001"/>
+  <testcase name="testCreateChatRoomInvalidNameWithSpace()" classname="com.chatter.platform.AppIntegrationBasicTest" time="0.0"/>
+  <testcase name="testAddUserToChatRoomSuccess()" classname="com.chatter.platform.AppIntegrationBasicTest" time="0.0"/>
+  <testcase name="testRegisterUserInvalidUsernameWithSpace()" classname="com.chatter.platform.AppIntegrationBasicTest" time="0.0"/>
+  <testcase name="testCreateChatRoomSuccess()" classname="com.chatter.platform.AppIntegrationBasicTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
