@@ -10,10 +10,12 @@ public class UserService {
     private final Map<String, User> users = new HashMap<>();
 
     public String registerUser(String username) {
+        if (username.contains(" ") || username.contains(";")) {
+            return Constants.REQUEST_PATTERN_INVALID;
+        }
         if (users.containsKey(username)) {
             return Constants.USERNAME_ALREADY_EXISTS;
         }
-
         users.put(username, new User(username));
         return Constants.SUCCESS;
     }

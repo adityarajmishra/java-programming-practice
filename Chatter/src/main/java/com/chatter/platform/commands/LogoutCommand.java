@@ -1,13 +1,16 @@
 package com.chatter.platform.commands;
 
+import com.chatter.platform.services.ChatRoomService;
 import com.chatter.platform.services.UserService;
 import com.chatter.platform.utils.Constants;
 
 public class LogoutCommand implements Command {
     private final UserService userService;
+    private final ChatRoomService chatRoomService;
 
-    public LogoutCommand(UserService userService) {
+    public LogoutCommand(UserService userService, ChatRoomService chatRoomService) {
         this.userService = userService;
+        this.chatRoomService = chatRoomService;
     }
 
     @Override
@@ -17,6 +20,10 @@ public class LogoutCommand implements Command {
         }
 
         String username = args[1];
-        return userService.logoutUser(username);
+        String result = userService.logoutUser(username);
+        if (result.equals(Constants.SUCCESS)) {
+            chatRoomService.removeUserFromAllRooms(username);
+        }
+        return result;
     }
 }

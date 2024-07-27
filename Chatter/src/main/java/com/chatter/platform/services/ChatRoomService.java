@@ -52,4 +52,10 @@ public class ChatRoomService {
     public int getRoomCount() {
         return rooms.size();
     }
+
+    public void removeUserFromAllRooms(String username) {
+        for (ChatRoom room : rooms.values()) {
+            room.removeUser(username);
+        }
+    }
 }

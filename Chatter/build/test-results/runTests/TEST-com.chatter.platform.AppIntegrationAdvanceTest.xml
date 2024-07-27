@@ -1,0 +1,848 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.chatter.platform.AppIntegrationAdvanceTest" tests="4" skipped="0" failures="4" errors="0" timestamp="2024-07-24T14:39:33" hostname="RX297RV65C" time="0.031">
+  <properties/>
+  <testcase name="testUserTransitionsBetweenMultipleRooms()" classname="com.chatter.platform.AppIntegrationAdvanceTest" time="0.022">
+    <failure message="org.opentest4j.AssertionFailedError: ?[31mTest Failed For:&#10;?[0m?[35m====INPUT SEQUENCE====&#10;?[0mREGISTER Alice&#10;REGISTER Bob&#10;REGISTER Charlie&#10;REGISTER Dave&#10;REGISTER Eve&#10;LOGIN Alice&#10;LOGIN Bob&#10;LOGIN Charlie&#10;LOGIN Dave&#10;LOGIN Eve&#10;CREATE_ROOM General&#10;CREATE_ROOM Tech&#10;CREATE_ROOM Sports&#10;CREATE_ROOM Music&#10;CREATE_ROOM Gaming&#10;ADD Alice TO General&#10;ADD Bob TO Tech&#10;ADD Charlie TO Sports&#10;ADD Dave TO Music&#10;ADD Eve TO Gaming&#10;ADD Alice TO Tech&#10;ADD Bob TO Sports&#10;ADD Charlie TO Music&#10;ADD Dave TO Gaming&#10;ADD Eve TO General&#10;USER_DETAIL Alice&#10;USER_DETAIL Bob&#10;USER_DETAIL Charlie&#10;USER_DETAIL Dave&#10;USER_DETAIL Eve&#10;LOGOUT Alice&#10;LOGOUT Bob&#10;LOGOUT Charlie&#10;LOGOUT Dave&#10;LOGOUT Eve&#10;LOGIN Alice&#10;LOGIN Bob&#10;LOGIN Charlie&#10;LOGIN Dave&#10;LOGIN Eve&#10;ADD Alice TO Sports&#10;ADD Bob TO Music&#10;ADD Charlie TO Gaming&#10;ADD Dave TO General&#10;ADD Eve TO Tech&#10;LISTROOMS&#10;USER_DETAIL Alice&#10;USER_DETAIL Bob&#10;USER_DETAIL Charlie&#10;USER_DETAIL Dave&#10;USER_DETAIL Eve&#10;LOGOUT Alice&#10;LOGOUT Bob&#10;LOGOUT Charlie&#10;LOGOUT Dave&#10;LOGOUT Eve&#10;EXIT&#10;?[35m===EXPECTED OUTPUT===                 | ===ACTUAL OUTPUT===?[0m&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;Username: Alice                       | Username: Alice&#10;LoggedIn: true                        | LoggedIn: true&#10;Chat Room: Tech                       | Chat Room: Tech&#10;Username: Bob                         | Username: Bob&#10;LoggedIn: true                        | LoggedIn: true&#10;Chat Room: Sports                     | Chat Room: Sports&#10;Username: Charlie                     | Username: Charlie&#10;LoggedIn: true                        | LoggedIn: true&#10;Chat Room: Music                      | Chat Room: Music&#10;Username: Dave                        | Username: Dave&#10;LoggedIn: true                        | LoggedIn: true&#10;Chat Room: Gaming                     | Chat Room: Gaming&#10;Username: Eve                         | Username: Eve&#10;LoggedIn: true                        | LoggedIn: true&#10;Chat Room: General                    | Chat Room: General&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;?[31mGeneral;Tech;Sports;Music;Gaming      | Gaming;General;Music;Sports;Tech?[0m&#10;Username: Alice                       | Username: Alice&#10;LoggedIn: true                        | LoggedIn: true&#10;Chat Room: Sports                     | Chat Room: Sports&#10;Username: Bob                         | Username: Bob&#10;LoggedIn: true                        | LoggedIn: true&#10;Chat Room: Music                      | Chat Room: Music&#10;Username: Charlie                     | Username: Charlie&#10;LoggedIn: true                        | LoggedIn: true&#10;Chat Room: Gaming                     | Chat Room: Gaming&#10;Username: Dave                        | Username: Dave&#10;LoggedIn: true                        | LoggedIn: true&#10;Chat Room: General                    | Chat Room: General&#10;Username: Eve                         | Username: Eve&#10;LoggedIn: true                        | LoggedIn: true&#10;Chat Room: Tech                       | Chat Room: Tech&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;User Count: 5                         | User Count: 5&#10;Chat Room Count: 5                    | Chat Room Count: 5&#10;Goodbye!                              | Goodbye!&#10;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: ?[31mTest Failed For:
+?[0m?[35m====INPUT SEQUENCE====
+?[0mREGISTER Alice
+REGISTER Bob
+REGISTER Charlie
+REGISTER Dave
+REGISTER Eve
+LOGIN Alice
+LOGIN Bob
+LOGIN Charlie
+LOGIN Dave
+LOGIN Eve
+CREATE_ROOM General
+CREATE_ROOM Tech
+CREATE_ROOM Sports
+CREATE_ROOM Music
+CREATE_ROOM Gaming
+ADD Alice TO General
+ADD Bob TO Tech
+ADD Charlie TO Sports
+ADD Dave TO Music
+ADD Eve TO Gaming
+ADD Alice TO Tech
+ADD Bob TO Sports
+ADD Charlie TO Music
+ADD Dave TO Gaming
+ADD Eve TO General
+USER_DETAIL Alice
+USER_DETAIL Bob
+USER_DETAIL Charlie
+USER_DETAIL Dave
+USER_DETAIL Eve
+LOGOUT Alice
+LOGOUT Bob
+LOGOUT Charlie
+LOGOUT Dave
+LOGOUT Eve
+LOGIN Alice
+LOGIN Bob
+LOGIN Charlie
+LOGIN Dave
+LOGIN Eve
+ADD Alice TO Sports
+ADD Bob TO Music
+ADD Charlie TO Gaming
+ADD Dave TO General
+ADD Eve TO Tech
+LISTROOMS
+USER_DETAIL Alice
+USER_DETAIL Bob
+USER_DETAIL Charlie
+USER_DETAIL Dave
+USER_DETAIL Eve
+LOGOUT Alice
+LOGOUT Bob
+LOGOUT Charlie
+LOGOUT Dave
+LOGOUT Eve
+EXIT
+?[35m===EXPECTED OUTPUT===                 | ===ACTUAL OUTPUT===?[0m
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+Username: Alice                       | Username: Alice
+LoggedIn: true                        | LoggedIn: true
+Chat Room: Tech                       | Chat Room: Tech
+Username: Bob                         | Username: Bob
+LoggedIn: true                        | LoggedIn: true
+Chat Room: Sports                     | Chat Room: Sports
+Username: Charlie                     | Username: Charlie
+LoggedIn: true                        | LoggedIn: true
+Chat Room: Music                      | Chat Room: Music
+Username: Dave                        | Username: Dave
+LoggedIn: true                        | LoggedIn: true
+Chat Room: Gaming                     | Chat Room: Gaming
+Username: Eve                         | Username: Eve
+LoggedIn: true                        | LoggedIn: true
+Chat Room: General                    | Chat Room: General
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+?[31mGeneral;Tech;Sports;Music;Gaming      | Gaming;General;Music;Sports;Tech?[0m
+Username: Alice                       | Username: Alice
+LoggedIn: true                        | LoggedIn: true
+Chat Room: Sports                     | Chat Room: Sports
+Username: Bob                         | Username: Bob
+LoggedIn: true                        | LoggedIn: true
+Chat Room: Music                      | Chat Room: Music
+Username: Charlie                     | Username: Charlie
+LoggedIn: true                        | LoggedIn: true
+Chat Room: Gaming                     | Chat Room: Gaming
+Username: Dave                        | Username: Dave
+LoggedIn: true                        | LoggedIn: true
+Chat Room: General                    | Chat Room: General
+Username: Eve                         | Username: Eve
+LoggedIn: true                        | LoggedIn: true
+Chat Room: Tech                       | Chat Room: Tech
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+User Count: 5                         | User Count: 5
+Chat Room Count: 5                    | Chat Room Count: 5
+Goodbye!                              | Goodbye!
+
+	at app//org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
+	at app//org.junit.jupiter.api.Assertions.fail(Assertions.java:117)
+	at app//com.chatter.platform.AppIntegrationAdvanceTest.assertAppOutput(AppIntegrationAdvanceTest.java:80)
+	at app//com.chatter.platform.AppIntegrationAdvanceTest.testUserTransitionsBetweenMultipleRooms(AppIntegrationAdvanceTest.java:162)
+	at java.base@20.0.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base@20.0.1/java.lang.reflect.Method.invoke(Method.java:578)
+	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:688)
+	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at app//org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:210)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:206)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:131)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:65)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at java.base@20.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at java.base@20.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at app//org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:119)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:94)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:89)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base@20.0.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base@20.0.1/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <testcase name="testComplexInteractionWithMultipleUsersAndRooms()" classname="com.chatter.platform.AppIntegrationAdvanceTest" time="0.002">
+    <failure message="org.opentest4j.AssertionFailedError: ?[31mTest Failed For:&#10;?[0m?[35m====INPUT SEQUENCE====&#10;?[0mREGISTER Alice&#10;REGISTER Bob&#10;REGISTER Charlie&#10;LOGIN Alice&#10;LOGIN Bob&#10;LOGIN Charlie&#10;CREATE_ROOM General&#10;CREATE_ROOM Tech&#10;CREATE_ROOM Sports&#10;ADD Alice TO General&#10;ADD Bob TO Tech&#10;ADD Charlie TO Sports&#10;LOGOUT Alice&#10;LOGIN Alice&#10;ADD Alice TO Sports&#10;LOGOUT Charlie&#10;LOGIN Charlie&#10;CREATE_ROOM Music&#10;ADD Bob TO Music&#10;LOGOUT Bob&#10;LOGIN Bob&#10;ADD Bob TO General&#10;USER_DETAIL Alice&#10;USER_DETAIL Bob&#10;USER_DETAIL Charlie&#10;LISTROOMS&#10;CREATE_ROOM Gaming&#10;ADD Charlie TO Gaming&#10;ADD Alice TO Gaming&#10;LOGOUT Alice&#10;LOGIN Alice&#10;ADD Alice TO Tech&#10;USER_DETAIL Alice&#10;LOGOUT Charlie&#10;ADD Charlie TO Tech&#10;LOGOUT Charlie&#10;LOGIN Charlie&#10;USER_DETAIL Charlie&#10;LISTROOMS&#10;LOGOUT Bob&#10;LOGIN Bob&#10;ADD Bob TO Gaming&#10;USER_DETAIL Bob&#10;EXIT&#10;?[35m===EXPECTED OUTPUT===                 | ===ACTUAL OUTPUT===?[0m&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;Username: Alice                       | Username: Alice&#10;LoggedIn: true                        | LoggedIn: true&#10;Chat Room: Sports                     | Chat Room: Sports&#10;Username: Bob                         | Username: Bob&#10;LoggedIn: true                        | LoggedIn: true&#10;Chat Room: General                    | Chat Room: General&#10;Username: Charlie                     | Username: Charlie&#10;LoggedIn: true                        | LoggedIn: true&#10;Chat Room: null                       | Chat Room: null&#10;?[31mGeneral;Tech;Sports;Music             | General;Music;Sports;Tech?[0m&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;Username: Alice                       | Username: Alice&#10;LoggedIn: true                        | LoggedIn: true&#10;Chat Room: Tech                       | Chat Room: Tech&#10;SUCCESS                               | SUCCESS&#10;USERNAME_NOT_ONLINE                   | USERNAME_NOT_ONLINE&#10;USERNAME_NOT_ONLINE                   | USERNAME_NOT_ONLINE&#10;SUCCESS                               | SUCCESS&#10;Username: Charlie                     | Username: Charlie&#10;LoggedIn: true                        | LoggedIn: true&#10;Chat Room: null                       | Chat Room: null&#10;?[31mGeneral;Tech;Sports;Music;Gaming      | Gaming;General;Music;Sports;Tech?[0m&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;SUCCESS                               | SUCCESS&#10;Username: Bob                         | Username: Bob&#10;LoggedIn: true                        | LoggedIn: true&#10;Chat Room: Gaming                     | Chat Room: Gaming&#10;User Count: 3                         | User Count: 3&#10;Chat Room Count: 5                    | Chat Room Count: 5&#10;Goodbye!                              | Goodbye!&#10;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: ?[31mTest Failed For:
+?[0m?[35m====INPUT SEQUENCE====
+?[0mREGISTER Alice
+REGISTER Bob
+REGISTER Charlie
+LOGIN Alice
+LOGIN Bob
+LOGIN Charlie
+CREATE_ROOM General
+CREATE_ROOM Tech
+CREATE_ROOM Sports
+ADD Alice TO General
+ADD Bob TO Tech
+ADD Charlie TO Sports
+LOGOUT Alice
+LOGIN Alice
+ADD Alice TO Sports
+LOGOUT Charlie
+LOGIN Charlie
+CREATE_ROOM Music
+ADD Bob TO Music
+LOGOUT Bob
+LOGIN Bob
+ADD Bob TO General
+USER_DETAIL Alice
+USER_DETAIL Bob
+USER_DETAIL Charlie
+LISTROOMS
+CREATE_ROOM Gaming
+ADD Charlie TO Gaming
+ADD Alice TO Gaming
+LOGOUT Alice
+LOGIN Alice
+ADD Alice TO Tech
+USER_DETAIL Alice
+LOGOUT Charlie
+ADD Charlie TO Tech
+LOGOUT Charlie
+LOGIN Charlie
+USER_DETAIL Charlie
+LISTROOMS
+LOGOUT Bob
+LOGIN Bob
+ADD Bob TO Gaming
+USER_DETAIL Bob
+EXIT
+?[35m===EXPECTED OUTPUT===                 | ===ACTUAL OUTPUT===?[0m
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+Username: Alice                       | Username: Alice
+LoggedIn: true                        | LoggedIn: true
+Chat Room: Sports                     | Chat Room: Sports
+Username: Bob                         | Username: Bob
+LoggedIn: true                        | LoggedIn: true
+Chat Room: General                    | Chat Room: General
+Username: Charlie                     | Username: Charlie
+LoggedIn: true                        | LoggedIn: true
+Chat Room: null                       | Chat Room: null
+?[31mGeneral;Tech;Sports;Music             | General;Music;Sports;Tech?[0m
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+Username: Alice                       | Username: Alice
+LoggedIn: true                        | LoggedIn: true
+Chat Room: Tech                       | Chat Room: Tech
+SUCCESS                               | SUCCESS
+USERNAME_NOT_ONLINE                   | USERNAME_NOT_ONLINE
+USERNAME_NOT_ONLINE                   | USERNAME_NOT_ONLINE
+SUCCESS                               | SUCCESS
+Username: Charlie                     | Username: Charlie
+LoggedIn: true                        | LoggedIn: true
+Chat Room: null                       | Chat Room: null
+?[31mGeneral;Tech;Sports;Music;Gaming      | Gaming;General;Music;Sports;Tech?[0m
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+SUCCESS                               | SUCCESS
+Username: Bob                         | Username: Bob
+LoggedIn: true                        | LoggedIn: true
+Chat Room: Gaming                     | Chat Room: Gaming
+User Count: 3                         | User Count: 3
+Chat Room Count: 5                    | Chat Room Count: 5
+Goodbye!                              | Goodbye!
+
+	at app//org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
+	at app//org.junit.jupiter.api.Assertions.fail(Assertions.java:117)
+	at app//com.chatter.platform.AppIntegrationAdvanceTest.assertAppOutput(AppIntegrationAdvanceTest.java:80)
+	at app//com.chatter.platform.AppIntegrationAdvanceTest.testComplexInteractionWithMultipleUsersAndRooms(AppIntegrationAdvanceTest.java:122)
+	at java.base@20.0.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base@20.0.1/java.lang.reflect.Method.invoke(Method.java:578)
+	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:688)
+	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at app//org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:210)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:206)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:131)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:65)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at java.base@20.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at java.base@20.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at app//org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:119)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:94)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:89)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base@20.0.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base@20.0.1/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <testcase name="testFrequentRoomSwitchingAndUserDetails()" classname="com.chatter.platform.AppIntegrationAdvanceTest" time="0.002">
+    <failure message="org.opentest4j.AssertionFailedError: ?[31mTest Failed For:&#10;?[0m?[35m====INPUT SEQUENCE====&#10;?[0mREGISTER Alice&#10;REGISTER Bob&#10;REGISTER Charlie&#10;REGISTER Dave&#10;LOGIN Alice&#10;LOGIN Bob&#10;LOGIN Charlie&#10;LOGIN Dave&#10;CREATE_ROOM General&#10;CREATE_ROOM Tech&#10;CREATE_ROOM Sports&#10;ADD Alice TO General&#10;ADD Bob TO Tech&#10;ADD Charlie TO Sports&#10;ADD Dave TO General&#10;ADD Alice TO Tech&#10;ADD Bob TO Sports&#10;ADD Charlie TO General&#10;ADD Dave TO Tech&#10;ADD Alice TO Sports&#10;ADD Bob TO General&#10;ADD Charlie TO Tech&#10;ADD Dave TO Sports&#10;USER_DETAIL Alice&#10;USER_DETAIL Bob&#10;USER_DETAIL Charlie&#10;USER_DETAIL Dave&#10;LOGOUT Alice&#10;LOGOUT Bob&#10;LOGOUT Charlie&#10;LOGOUT Dave&#10;LOGIN Alice&#10;LOGIN Bob&#10;LOGIN Charlie&#10;LOGIN Dave&#10;ADD Alice TO General&#10;ADD Bob TO Tech&#10;ADD Charlie TO Sports&#10;ADD Dave TO General&#10;ADD Alice TO Sports&#10;ADD Bob TO General&#10;ADD Charlie TO Tech&#10;ADD Dave TO Sports&#10;USER_DETAIL Alice&#10;USER_DETAIL Bob&#10;USER_DETAIL Charlie&#10;USER_DETAIL Dave&#10;LISTROOMS&#10;LOGOUT Alice&#10;LOGOUT Bob&#10;LOGOUT Charlie&#10;LOGOUT Dave&#10;EXIT&#10;?[35m===EXPECTED OUTPUT===    | ===ACTUAL OUTPUT===?[0m&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;Username: Alice          | Username: Alice&#10;LoggedIn: true           | LoggedIn: true&#10;Chat Room: Sports        | Chat Room: Sports&#10;Username: Bob            | Username: Bob&#10;LoggedIn: true           | LoggedIn: true&#10;Chat Room: General       | Chat Room: General&#10;Username: Charlie        | Username: Charlie&#10;LoggedIn: true           | LoggedIn: true&#10;Chat Room: Tech          | Chat Room: Tech&#10;Username: Dave           | Username: Dave&#10;LoggedIn: true           | LoggedIn: true&#10;Chat Room: Sports        | Chat Room: Sports&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;Username: Alice          | Username: Alice&#10;LoggedIn: true           | LoggedIn: true&#10;Chat Room: Sports        | Chat Room: Sports&#10;Username: Bob            | Username: Bob&#10;LoggedIn: true           | LoggedIn: true&#10;Chat Room: General       | Chat Room: General&#10;Username: Charlie        | Username: Charlie&#10;LoggedIn: true           | LoggedIn: true&#10;Chat Room: Tech          | Chat Room: Tech&#10;Username: Dave           | Username: Dave&#10;LoggedIn: true           | LoggedIn: true&#10;Chat Room: Sports        | Chat Room: Sports&#10;?[31mGeneral;Tech;Sports      | General;Sports;Tech?[0m&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;SUCCESS                  | SUCCESS&#10;User Count: 4            | User Count: 4&#10;Chat Room Count: 3       | Chat Room Count: 3&#10;Goodbye!                 | Goodbye!&#10;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: ?[31mTest Failed For:
+?[0m?[35m====INPUT SEQUENCE====
+?[0mREGISTER Alice
+REGISTER Bob
+REGISTER Charlie
+REGISTER Dave
+LOGIN Alice
+LOGIN Bob
+LOGIN Charlie
+LOGIN Dave
+CREATE_ROOM General
+CREATE_ROOM Tech
+CREATE_ROOM Sports
+ADD Alice TO General
+ADD Bob TO Tech
+ADD Charlie TO Sports
+ADD Dave TO General
+ADD Alice TO Tech
+ADD Bob TO Sports
+ADD Charlie TO General
+ADD Dave TO Tech
+ADD Alice TO Sports
+ADD Bob TO General
+ADD Charlie TO Tech
+ADD Dave TO Sports
+USER_DETAIL Alice
+USER_DETAIL Bob
+USER_DETAIL Charlie
+USER_DETAIL Dave
+LOGOUT Alice
+LOGOUT Bob
+LOGOUT Charlie
+LOGOUT Dave
+LOGIN Alice
+LOGIN Bob
+LOGIN Charlie
+LOGIN Dave
+ADD Alice TO General
+ADD Bob TO Tech
+ADD Charlie TO Sports
+ADD Dave TO General
+ADD Alice TO Sports
+ADD Bob TO General
+ADD Charlie TO Tech
+ADD Dave TO Sports
+USER_DETAIL Alice
+USER_DETAIL Bob
+USER_DETAIL Charlie
+USER_DETAIL Dave
+LISTROOMS
+LOGOUT Alice
+LOGOUT Bob
+LOGOUT Charlie
+LOGOUT Dave
+EXIT
+?[35m===EXPECTED OUTPUT===    | ===ACTUAL OUTPUT===?[0m
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+Username: Alice          | Username: Alice
+LoggedIn: true           | LoggedIn: true
+Chat Room: Sports        | Chat Room: Sports
+Username: Bob            | Username: Bob
+LoggedIn: true           | LoggedIn: true
+Chat Room: General       | Chat Room: General
+Username: Charlie        | Username: Charlie
+LoggedIn: true           | LoggedIn: true
+Chat Room: Tech          | Chat Room: Tech
+Username: Dave           | Username: Dave
+LoggedIn: true           | LoggedIn: true
+Chat Room: Sports        | Chat Room: Sports
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+Username: Alice          | Username: Alice
+LoggedIn: true           | LoggedIn: true
+Chat Room: Sports        | Chat Room: Sports
+Username: Bob            | Username: Bob
+LoggedIn: true           | LoggedIn: true
+Chat Room: General       | Chat Room: General
+Username: Charlie        | Username: Charlie
+LoggedIn: true           | LoggedIn: true
+Chat Room: Tech          | Chat Room: Tech
+Username: Dave           | Username: Dave
+LoggedIn: true           | LoggedIn: true
+Chat Room: Sports        | Chat Room: Sports
+?[31mGeneral;Tech;Sports      | General;Sports;Tech?[0m
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+SUCCESS                  | SUCCESS
+User Count: 4            | User Count: 4
+Chat Room Count: 3       | Chat Room Count: 3
+Goodbye!                 | Goodbye!
+
+	at app//org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
+	at app//org.junit.jupiter.api.Assertions.fail(Assertions.java:117)
+	at app//com.chatter.platform.AppIntegrationAdvanceTest.assertAppOutput(AppIntegrationAdvanceTest.java:80)
+	at app//com.chatter.platform.AppIntegrationAdvanceTest.testFrequentRoomSwitchingAndUserDetails(AppIntegrationAdvanceTest.java:204)
+	at java.base@20.0.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base@20.0.1/java.lang.reflect.Method.invoke(Method.java:578)
+	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:688)
+	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at app//org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:210)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:206)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:131)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:65)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at java.base@20.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at java.base@20.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at app//org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:119)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:94)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:89)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base@20.0.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base@20.0.1/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <testcase name="testFrequentLoginsAndRoomTransitions()" classname="com.chatter.platform.AppIntegrationAdvanceTest" time="0.003">
+    <failure message="org.opentest4j.AssertionFailedError: ?[31mTest Failed For:&#10;?[0m?[35m====INPUT SEQUENCE====&#10;?[0mREGISTER Alice&#10;REGISTER Bob&#10;REGISTER Charlie&#10;LOGIN Alice&#10;LOGIN Bob&#10;LOGIN Charlie&#10;CREATE_ROOM General&#10;CREATE_ROOM Tech&#10;CREATE_ROOM Sports&#10;CREATE_ROOM Music&#10;ADD Alice TO General&#10;ADD Bob TO Tech&#10;ADD Charlie TO Sports&#10;LOGOUT Alice&#10;LOGIN Alice&#10;ADD Alice TO Music&#10;LOGOUT Bob&#10;LOGIN Bob&#10;ADD Bob TO Sports&#10;LOGOUT Charlie&#10;LOGIN Charlie&#10;ADD Charlie TO General&#10;USER_DETAIL Alice&#10;USER_DETAIL Bob&#10;USER_DETAIL Charlie&#10;LOGOUT Alice&#10;LOGIN Alice&#10;ADD Alice TO Tech&#10;LOGOUT Bob&#10;LOGIN Bob&#10;ADD Bob TO Music&#10;USER_DETAIL Alice&#10;USER_DETAIL Bob&#10;USER_DETAIL Charlie&#10;LISTROOMS&#10;LOGOUT Charlie&#10;LOGIN Charlie&#10;ADD Charlie TO Tech&#10;LOGOUT Alice&#10;LOGIN Alice&#10;ADD Alice TO Sports&#10;LOGOUT Bob&#10;LOGIN Bob&#10;ADD Bob TO General&#10;USER_DETAIL Alice&#10;USER_DETAIL Bob&#10;USER_DETAIL Charlie&#10;EXIT&#10;?[35m===EXPECTED OUTPUT===          | ===ACTUAL OUTPUT===?[0m&#10;SUCCESS                        | SUCCESS&#10;SUCCESS                        | SUCCESS&#10;SUCCESS                        | SUCCESS&#10;SUCCESS                        | SUCCESS&#10;SUCCESS                        | SUCCESS&#10;SUCCESS                        | SUCCESS&#10;SUCCESS                        | SUCCESS&#10;SUCCESS                        | SUCCESS&#10;SUCCESS                        | SUCCESS&#10;SUCCESS                        | SUCCESS&#10;SUCCESS                        | SUCCESS&#10;SUCCESS                        | SUCCESS&#10;SUCCESS                        | SUCCESS&#10;SUCCESS                        | SUCCESS&#10;SUCCESS                        | SUCCESS&#10;SUCCESS                        | SUCCESS&#10;SUCCESS                        | SUCCESS&#10;SUCCESS                        | SUCCESS&#10;SUCCESS                        | SUCCESS&#10;SUCCESS                        | SUCCESS&#10;SUCCESS                        | SUCCESS&#10;SUCCESS                        | SUCCESS&#10;Username: Alice                | Username: Alice&#10;LoggedIn: true                 | LoggedIn: true&#10;Chat Room: Music               | Chat Room: Music&#10;Username: Bob                  | Username: Bob&#10;LoggedIn: true                 | LoggedIn: true&#10;Chat Room: Sports              | Chat Room: Sports&#10;Username: Charlie              | Username: Charlie&#10;LoggedIn: true                 | LoggedIn: true&#10;Chat Room: General             | Chat Room: General&#10;SUCCESS                        | SUCCESS&#10;SUCCESS                        | SUCCESS&#10;SUCCESS                        | SUCCESS&#10;SUCCESS                        | SUCCESS&#10;SUCCESS                        | SUCCESS&#10;SUCCESS                        | SUCCESS&#10;Username: Alice                | Username: Alice&#10;LoggedIn: true                 | LoggedIn: true&#10;Chat Room: Tech                | Chat Room: Tech&#10;Username: Bob                  | Username: Bob&#10;LoggedIn: true                 | LoggedIn: true&#10;Chat Room: Music               | Chat Room: Music&#10;Username: Charlie              | Username: Charlie&#10;LoggedIn: true                 | LoggedIn: true&#10;Chat Room: General             | Chat Room: General&#10;?[31mGeneral;Tech;Sports;Music      | General;Music;Sports;Tech?[0m&#10;SUCCESS                        | SUCCESS&#10;SUCCESS                        | SUCCESS&#10;SUCCESS                        | SUCCESS&#10;SUCCESS                        | SUCCESS&#10;SUCCESS                        | SUCCESS&#10;SUCCESS                        | SUCCESS&#10;SUCCESS                        | SUCCESS&#10;SUCCESS                        | SUCCESS&#10;SUCCESS                        | SUCCESS&#10;Username: Alice                | Username: Alice&#10;LoggedIn: true                 | LoggedIn: true&#10;Chat Room: Sports              | Chat Room: Sports&#10;Username: Bob                  | Username: Bob&#10;LoggedIn: true                 | LoggedIn: true&#10;Chat Room: General             | Chat Room: General&#10;Username: Charlie              | Username: Charlie&#10;LoggedIn: true                 | LoggedIn: true&#10;Chat Room: Tech                | Chat Room: Tech&#10;User Count: 3                  | User Count: 3&#10;Chat Room Count: 4             | Chat Room Count: 4&#10;Goodbye!                       | Goodbye!&#10;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: ?[31mTest Failed For:
+?[0m?[35m====INPUT SEQUENCE====
+?[0mREGISTER Alice
+REGISTER Bob
+REGISTER Charlie
+LOGIN Alice
+LOGIN Bob
+LOGIN Charlie
+CREATE_ROOM General
+CREATE_ROOM Tech
+CREATE_ROOM Sports
+CREATE_ROOM Music
+ADD Alice TO General
+ADD Bob TO Tech
+ADD Charlie TO Sports
+LOGOUT Alice
+LOGIN Alice
+ADD Alice TO Music
+LOGOUT Bob
+LOGIN Bob
+ADD Bob TO Sports
+LOGOUT Charlie
+LOGIN Charlie
+ADD Charlie TO General
+USER_DETAIL Alice
+USER_DETAIL Bob
+USER_DETAIL Charlie
+LOGOUT Alice
+LOGIN Alice
+ADD Alice TO Tech
+LOGOUT Bob
+LOGIN Bob
+ADD Bob TO Music
+USER_DETAIL Alice
+USER_DETAIL Bob
+USER_DETAIL Charlie
+LISTROOMS
+LOGOUT Charlie
+LOGIN Charlie
+ADD Charlie TO Tech
+LOGOUT Alice
+LOGIN Alice
+ADD Alice TO Sports
+LOGOUT Bob
+LOGIN Bob
+ADD Bob TO General
+USER_DETAIL Alice
+USER_DETAIL Bob
+USER_DETAIL Charlie
+EXIT
+?[35m===EXPECTED OUTPUT===          | ===ACTUAL OUTPUT===?[0m
+SUCCESS                        | SUCCESS
+SUCCESS                        | SUCCESS
+SUCCESS                        | SUCCESS
+SUCCESS                        | SUCCESS
+SUCCESS                        | SUCCESS
+SUCCESS                        | SUCCESS
+SUCCESS                        | SUCCESS
+SUCCESS                        | SUCCESS
+SUCCESS                        | SUCCESS
+SUCCESS                        | SUCCESS
+SUCCESS                        | SUCCESS
+SUCCESS                        | SUCCESS
+SUCCESS                        | SUCCESS
+SUCCESS                        | SUCCESS
+SUCCESS                        | SUCCESS
+SUCCESS                        | SUCCESS
+SUCCESS                        | SUCCESS
+SUCCESS                        | SUCCESS
+SUCCESS                        | SUCCESS
+SUCCESS                        | SUCCESS
+SUCCESS                        | SUCCESS
+SUCCESS                        | SUCCESS
+Username: Alice                | Username: Alice
+LoggedIn: true                 | LoggedIn: true
+Chat Room: Music               | Chat Room: Music
+Username: Bob                  | Username: Bob
+LoggedIn: true                 | LoggedIn: true
+Chat Room: Sports              | Chat Room: Sports
+Username: Charlie              | Username: Charlie
+LoggedIn: true                 | LoggedIn: true
+Chat Room: General             | Chat Room: General
+SUCCESS                        | SUCCESS
+SUCCESS                        | SUCCESS
+SUCCESS                        | SUCCESS
+SUCCESS                        | SUCCESS
+SUCCESS                        | SUCCESS
+SUCCESS                        | SUCCESS
+Username: Alice                | Username: Alice
+LoggedIn: true                 | LoggedIn: true
+Chat Room: Tech                | Chat Room: Tech
+Username: Bob                  | Username: Bob
+LoggedIn: true                 | LoggedIn: true
+Chat Room: Music               | Chat Room: Music
+Username: Charlie              | Username: Charlie
+LoggedIn: true                 | LoggedIn: true
+Chat Room: General             | Chat Room: General
+?[31mGeneral;Tech;Sports;Music      | General;Music;Sports;Tech?[0m
+SUCCESS                        | SUCCESS
+SUCCESS                        | SUCCESS
+SUCCESS                        | SUCCESS
+SUCCESS                        | SUCCESS
+SUCCESS                        | SUCCESS
+SUCCESS                        | SUCCESS
+SUCCESS                        | SUCCESS
+SUCCESS                        | SUCCESS
+SUCCESS                        | SUCCESS
+Username: Alice                | Username: Alice
+LoggedIn: true                 | LoggedIn: true
+Chat Room: Sports              | Chat Room: Sports
+Username: Bob                  | Username: Bob
+LoggedIn: true                 | LoggedIn: true
+Chat Room: General             | Chat Room: General
+Username: Charlie              | Username: Charlie
+LoggedIn: true                 | LoggedIn: true
+Chat Room: Tech                | Chat Room: Tech
+User Count: 3                  | User Count: 3
+Chat Room Count: 4             | Chat Room Count: 4
+Goodbye!                       | Goodbye!
+
+	at app//org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
+	at app//org.junit.jupiter.api.Assertions.fail(Assertions.java:117)
+	at app//com.chatter.platform.AppIntegrationAdvanceTest.assertAppOutput(AppIntegrationAdvanceTest.java:80)
+	at app//com.chatter.platform.AppIntegrationAdvanceTest.testFrequentLoginsAndRoomTransitions(AppIntegrationAdvanceTest.java:248)
+	at java.base@20.0.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base@20.0.1/java.lang.reflect.Method.invoke(Method.java:578)
+	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:688)
+	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at app//org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:210)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:206)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:131)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:65)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at java.base@20.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at java.base@20.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at app//org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:119)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:94)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:89)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base@20.0.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base@20.0.1/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

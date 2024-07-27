@@ -18,11 +18,17 @@ public class App {
             Scanner scanner = new Scanner(System.in);
 
             while (true) {
-                String input = scanner.nextLine();
+                String input = scanner.nextLine().trim();
                 String[] parts = input.split(" ");
 
+                if (parts.length == 0) {
+                    System.out.println(Constants.REQUEST_PATTERN_INVALID);
+                    continue;
+                }
+
+                String commandStr = parts[0].toUpperCase();
                 Command command;
-                switch (parts[0].toUpperCase()) {
+                switch (commandStr) {
                     case Constants.REGISTER:
                         command = new RegisterCommand(userService);
                         break;
@@ -30,7 +36,7 @@ public class App {
                         command = new LoginCommand(userService);
                         break;
                     case Constants.LOGOUT:
-                        command = new LogoutCommand(userService);
+                        command = new LogoutCommand(userService, chatRoomService);
                         break;
                     case Constants.CREATE_ROOM:
                         command = new CreateRoomCommand(chatRoomService);
@@ -55,7 +61,7 @@ public class App {
                 String result = command.execute(parts);
                 System.out.println(result);
 
-                if (parts[0].equalsIgnoreCase(Constants.EXIT)) {
+                if (commandStr.equals(Constants.EXIT)) {
                     break;
                 }
             }
